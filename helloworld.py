@@ -12,7 +12,7 @@ def approximate_size(size, a_kilobyte_is_1024_bytes = True):
     Returns: string`
 
     '''
-    if size < 0:
+    if size < 0: 
         raise ValueError('number must be non-negative')
 
     multiple = 1024 if a_kilobyte_is_1024_bytes else 1000
@@ -24,5 +24,5 @@ def approximate_size(size, a_kilobyte_is_1024_bytes = True):
     raise ValueError('number too large')
 
 if __name__ == '__main__':
-    print(approximate_size(1000000000000, False))
+    print(approximate_size(1000000000000, False)) 
     print(approximate_size(1000000000000))
